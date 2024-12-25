@@ -1,0 +1,37 @@
+/* Marque.css */
+.marquee-container {
+    position: relative;
+    overflow: hidden;
+    height: 85vh; /* Adjust height as per your design */
+    
+   
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .marquee{
+    background-color: red;
+  }
+
+  
+  
+ 
+
+  
+  .marquee img,
+  .marquee2 img {
+    height: 150px !important;
+    width: 186px !important;
+  }
+  
+  
+  @keyframes scroll-loop {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    100% {
+      transform: translateX(-100%); /* End position for seamless scrolling */
+    }
+  }
+  

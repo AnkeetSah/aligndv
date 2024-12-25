@@ -1,0 +1,186 @@
+.aboutContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center; /* Center the content horizontally */
+    padding: 30px;
+    
+    flex-direction: column; /* Stack content vertically on mobile */
+}
+
+/* For the image */
+.aboutContainer img {
+    height: 580px;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    width: 100%; /* Ensure the image takes full width of the container */
+    max-width: 100%; /* Prevent the image from stretching */
+}
+
+/* Title text style */
+.titleAbout {
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 1.1; /* Adjust line height for better spacing */
+    animation: background-pan 3s linear infinite alternate;
+    background: linear-gradient(to right, #7a06e8, #f10fe9, #841bca, #220140); /* Gradient colors */
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: transparent; /* Fallback for other browsers */
+    white-space: normal; /* Allow text to break into multiple lines */
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px 0; /* Add some padding for better spacing */
+    display: inline-block; /* Ensure the text takes up the correct amount of space */
+}
+
+
+
+/* Keyframes for bidirectional animation */
+@keyframes background-pan {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 100% center;
+    }
+}
+
+/* About text style */
+.t-about {
+    color: white;
+   
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 650px;
+    margin-top: 50px;
+    font-family: Mulish, sans-serif;  
+    text-align: left; /* Center align for better appearance on mobile */
+}
+
+/* Container for content */
+.aboutdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+    width: 60%;
+    margin-top: 140px;
+    
+}
+.imgdiv{
+    width: 40%;
+}
+
+/* Button styling */
+.aboutContainer button {
+    padding: 10px;
+    border: 1px solid gray;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    gap: 15px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 280px;
+    background-color: transparent;
+    color: white;
+}
+
+/* Arrow icon inside the button */
+.fa-arrow-right {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 50%; /* Make the background circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutContainer img {
+    height: 580px;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    width: 100%; /* Ensure the image takes full width of the container */
+    max-width: 100%; /* Prevent the image from stretching */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .aboutContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Center the content */
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        margin-top: 170px;
+        padding: 5px; /* Add some padding for mobile */
+    }
+
+    .aboutContainer img {
+        height: auto; /* Set height to auto to maintain aspect ratio */
+        width: 80vw; /* Take up 90% of the viewport width */
+        object-fit: cover;
+        margin: auto;
+    }
+
+    .titleAbout {
+        font-size: 40px; /* Smaller title font size */
+       margin: auto;
+        width:100%;
+       
+        
+        text-align: center; /* Center the title */
+    }
+
+    .t-about {
+        font-size: 16px; /* Smaller font size for mobile */
+        width: 100%; /* Take up more width */
+        margin-top: 0px;
+        text-align: center; /* Center align text for mobile */
+    }
+
+    .aboutContainer button {
+        margin-left: 0px; /* Remove left margin */
+        width: 100%; /* Make the button full width on mobile */
+        justify-content: center; /* Center the button content */
+       
+    }
+
+    .fa-arrow-right {
+        width: 25px;
+        height: 25px;
+    }
+
+    .aboutdiv {
+        width: 100%;
+        margin-top: 60px;
+        height: auto;
+        padding: 0px;
+    }
+
+    .titleAbout {
+        text-align: center;
+    }
+
+    .imgdiv {
+        width: 100%;
+
+        height: auto; /* Let the image container adjust its height based on the image aspect ratio */
+    }
+    .know{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}

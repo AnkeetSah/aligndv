@@ -1,0 +1,44 @@
+.clientp{
+    margin-right: 80px;
+    height: 130px;
+}
+.clientContainer{
+    margin-top: 200px;
+   
+   margin-bottom: 490px;
+}
+.ccontainer {
+    height: 100vh;
+    width: 100vw;
+    padding: 10px 60px;
+    margin-bottom: 250px;
+    margin-top: 40px;
+    
+    
+  }
+.review{
+    height: 20%;
+   
+    height: auto;
+}
+@media (max-width:780px){
+    .review{
+        justify-content: center;
+       
+        margin-bottom: -10px;
+    }
+    .clientp{
+      
+        width: 100%;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .ccontainer{
+        padding: 10px 5px;
+        
+        height:60vh;
+        margin-bottom: -440px;
+    }
+    
+
+}

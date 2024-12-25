@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Purple Color-Changing Name</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #1e1e1e;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .color-changing-name {
+      font-size: 4rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, darkviolet, purple, indigo);
+      background-size: 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: colorChange 3s infinite ease-in-out;
+    }
+
+    @keyframes colorChange {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="color-changing-name">Ankeet Kumar Sah</div>
+</body>
+</html>

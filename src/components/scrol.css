@@ -1,0 +1,57 @@
+/* Marque.css */
+.marquee-container {
+    position: relative;
+    overflow: hidden;
+    height: 80vh; /* Adjust height as per your design */
+    
+   
+    display: flex;
+    align-items: center;
+  }
+  
+  .scrol,
+  .scrol2 {
+    display: flex;
+    gap: 20px; /* Adjust spacing between items */
+    animation: scroll-loop 40s linear infinite;
+    white-space: nowrap;
+    align-items: center;
+  }
+  
+  .scrol span,
+  .scrol2 span {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #333333;
+    margin: 0px 30px;
+    
+  }
+  span div {
+   
+    width: 200px;
+  }  
+  
+ 
+  
+  .scrol img,
+  .scrol2 img {
+    display: block;
+    width: 244px;
+    margin-top: -1px;
+    margin-right: 30px;
+  }
+  
+  @keyframes scroll-loop {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    100% {
+      transform: translateX(-100%); /* End position for seamless scrolling */
+    }
+  }
+
+ 
+  

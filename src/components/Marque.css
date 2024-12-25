@@ -1,0 +1,80 @@
+/* Marque.css */
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  height: 80vh; /* Adjust height as per your design */
+  
+ 
+  display: flex;
+  align-items: center;
+}
+
+.marquee,
+.marquee2 {
+  display: flex;
+  gap: 20px; /* Adjust spacing between items */
+  animation: scroll-loop 10s linear infinite;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.marquee span,
+.marquee2 span {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #333333;
+  margin: 0px 30px;
+  
+}
+
+.marquee span b,
+.marquee2 span b {
+  font-weight: bold;
+  margin-left: 20px;
+  display: block;
+  color: #fbfbfb;
+  font-size: 40px;
+  font-family: Mulish, sans-serif;
+  line-height: 42px;
+}
+
+.marquee img,
+.marquee2 img {
+  display: block;
+  width: 24px;
+  margin-top: -1px;
+  margin-right: 30px;
+}
+
+@keyframes scroll-loop {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-100%); /* End position for seamless scrolling */
+  }
+}
+
+@media (max-width:780px){
+  .marquee,
+.marquee2 {
+  display: flex;
+  gap: 10px; /* Adjust spacing between items */
+  animation: scroll-loop 20s linear infinite;
+  white-space: nowrap;
+  align-items: center;
+  
+}
+.marquee span b,
+.marquee2 span b {
+  font-size: 20px;
+ 
+}
+span div{
+   
+  width: 20px;
+}
+}

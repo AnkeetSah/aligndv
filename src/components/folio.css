@@ -1,0 +1,169 @@
+.PortfolioGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    font-family: Mulish, sans-serif;
+    margin-top: -680px;
+  }
+  .portContainer {
+    height: 100vh;
+    width: 100vw;
+  
+    padding: 10px 60px;
+    margin-bottom: 250px;
+    margin-top: 40px;
+    
+  }
+  .porthead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    flex-wrap: wrap;
+  }
+  
+  .child {
+    position: relative;
+    width: 420px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .child-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 70%); */
+    transition: background 0.3s ease;
+  }
+  
+  .child-img {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 140px;
+    height: auto;
+    z-index: 2;
+    transition: transform 0.3s  ease;
+  }
+  
+  .desc {
+    position: relative;
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    
+    font-size: 0.9rem;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+    font-size: 20px;
+  }
+  
+  .child:hover .desc {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .child:hover .child-img {
+    transform: translateY(-60px);
+  }
+  
+  .child:hover .child-content {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 60%);
+  }
+  
+
+  .arrow {
+    color: white; /* Arrow color */
+    background: #a084ff; /* Background color */
+    font-size: 30px; /* Font size for arrow */
+    height: 50px; /* Height of the circular background */
+    width: 50px; /* Width of the circular background */
+    display: block; /* Enable flexbox */
+    font-weight: bolder;
+    border-radius: 50%; /* Rounded background */
+    margin-left: 10px; /* Adjust spacing if needed */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: none;
+    border-radius: 25px;
+    border: 2px solid rgb(40, 1, 40);
+    margin: auto;
+    color: white;
+}
+
+.fa{
+    margin-left: 10px;
+}
+
+  @media (max-width:480px){
+    .PortfolioGrid{
+      margin-top: -60px;
+      padding: 5px;
+    }
+    .portContainer{
+      
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      height: auto;
+      
+
+    }
+    .porthead{
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: -50px;
+      
+    }
+    .clientp{
+
+      margin-bottom: -200px;
+      width: 100%;
+      margin-right: 0px;
+    }
+    .h1-paragraph{
+      font-size: 15px;
+    }
+    .child {
+      position: relative;
+      width: 170px;
+      height: 200px;
+      border-radius: 20px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .child-img{
+      width: 70px;
+    }
+    .desc{
+      font-size: 12px;
+    }
+    button{
+      margin-top: 30px;
+    }
+    
+  }
+
+  

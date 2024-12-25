@@ -1,0 +1,109 @@
+.slider-container {
+  position: relative;
+  width: 100%; /* Full width of the container */
+  height: auto; /* Adjust the height as needed */
+  margin: -40px auto;
+  overflow: hidden; /* Ensure only one image is visible at a time */
+  border-radius: 10%; /* Rounded corners for the entire container */
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px; /* Rounded corners for the slider */
+  overflow: hidden; /* Ensure images don't overflow beyond rounded corners */
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Make sure the images take the full width */
+}
+
+.image-slide {
+  min-width: 100%; /* Ensures each image occupies the full width */
+  height: 100%; /* Make sure the images fill the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-slide img {
+  width: 100%; /* Ensure image covers the container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 20px; /* Rounded corners for the images */
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjusted for better contrast */
+  border: none;
+  border-radius: 50%; /* Rounded buttons */
+  cursor: pointer;
+  z-index: 10;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.prev-btn {
+  left: 10px; /* Position the previous button to the left */
+}
+
+.next-btn {
+  right: 10px; /* Position the next button to the right */
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.radio-btn {
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 100%; /* Fully rounded dots */
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.radio-btn:checked {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .slider-container {
+      margin: 0 auto;
+      border-radius: 15px; /* Adjusted for smaller screens */
+  }
+
+  .slider {
+      height: auto;
+      border-radius: 15px;
+  }
+
+  .image-slide img {
+      border-radius: 15px;
+  }
+  .prev-btn, .next-btn {
+    font-size: 1.5rem;
+    color: black;
+    background-color: rgb(246, 86, 246);
+    font-weight: bolder;
+  }
+
+  
+  
+}
