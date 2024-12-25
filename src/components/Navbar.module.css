@@ -77,7 +77,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto; /* Height will adjust to content */
+  height: 100vh; /* Height will adjust to content */
   background-color: rgba(0, 0, 0, 0.9); /* Retained your background color */
   display: flex;
   align-items: center;
