@@ -31,7 +31,7 @@ const App = () => {
       {isLoading ? (
         <div className="loading-container">
           <video
-            src="./videos/6678f9db71cce46bdf4a99d6%2F66fe8bbab4493c1935c09711_Align Logo for Siddhesh bhai 3-transcode.mp4"
+            src="./videos/v1.mp4"
             autoPlay
             muted
             loop
