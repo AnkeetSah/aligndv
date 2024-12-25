@@ -9,7 +9,7 @@ const HeroSection = () => {
       <main className="relative min-h-screen overflow-hidden">
         {/* Video Background */}
         <video
-          src="66546251d795c40282efe3f3%2F66570514ad5a9644e7915b9e_64c2353172e97a702d066dd2_new-transcode 1 (1)-transcode.mp4"
+          src="./videos/66546251d795c40282efe3f3%2F66570514ad5a9644e7915b9e_64c2353172e97a702d066dd2_new-transcode 1 (1)-transcode.mp4"
           autoPlay
           muted
           loop
